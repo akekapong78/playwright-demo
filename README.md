@@ -14,7 +14,8 @@ cd playwright-demo
 uv venv
 
 # 3. Install Playwright + pytest plugin
-uv pip install pytest-playwright
+uv add "pytest-playwright"
+# uv pip install pytest-playwright   # จะไม่ add เข้า dependecy auto
 
 # 4. Install browser binaries
 uv run playwright install
@@ -82,3 +83,13 @@ asyncio.run(main())
 
 
 
+Commands:
+  compile    Compile a `requirements.in` file to a `requirements.txt` or `pylock.toml` file
+  sync       Sync an environment with a `requirements.txt` or `pylock.toml` file
+  install    Install packages into an environment
+  uninstall  Uninstall packages from an environment
+  freeze     List, in requirements format, packages installed in an environment
+  list       List, in tabular format, packages installed in an environment
+  show       Show information about one or more installed packages
+  tree       Display the dependency tree for an environment
+  check      Verify installed packages have compatible dependencies
