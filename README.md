@@ -4,7 +4,24 @@ A simple demo project using [Playwright](https://playwright.dev/python/) with `p
 
 ---
 
-## 📦 Setup Instructions
+## ✅ Steps to install dependencies after cloning a uv project
+```bash
+# 1. Clone the repository
+git clone https://github.com/your-username/your-uv-project.git
+cd your-uv-project
+
+# 2. Create and activate the virtual environment
+uv venv
+# source .venv/bin/activate  # On macOS/Linux
+# .venv\Scripts\activate      # On Windows
+
+# 3. Install all dependencies from pyproject.toml
+uv pip install .
+# uv pip install -r requirements.txt  # Optional: only if using requirements.txt
+
+```
+
+## 📦 Setup Instructions for new init project
 ```bash
 # 1. Initialize the project
 uv init playwright-demo
